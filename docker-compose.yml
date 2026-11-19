@@ -1,0 +1,14 @@
+
+services:
+  app:
+    build: .
+    ports:
+      - 3000
+    volumes:
+      - data:/etc/x-ui
+
+volumes:
+  data:
+    driver_opts:
+      size: 1G
+      
